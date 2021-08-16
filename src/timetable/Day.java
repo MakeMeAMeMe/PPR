@@ -8,4 +8,28 @@ public class Day {
     public void dayTable(){
 
     }
+
+    public String getDay_name() {
+        return day_name;
+    }
+
+    public void setDay_name(String day_name) {
+        this.day_name = day_name;
+    }
+
+    public String getOccupied_by() {
+        return occupied_by;
+    }
+
+    public void setOccupied_by(String occupied_by) {
+        this.occupied_by = occupied_by;
+    }
+
+    public Agenda getAgenda() {
+        return agenda;
+    }
+
+    public void setAgenda(Agenda agenda) {
+        this.agenda = agenda;
+    }
 }

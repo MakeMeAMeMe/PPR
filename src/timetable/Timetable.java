@@ -15,4 +15,8 @@ public class Timetable {
     public void createWeekTable(){
 
     }
+
+    public Day getDay() {
+        return day;
+    }
 }
