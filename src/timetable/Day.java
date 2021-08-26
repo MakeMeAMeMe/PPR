@@ -5,6 +5,10 @@ public class Day {
     private String occupied_by;
     private Agenda agenda;
 
+    public Day(){
+        this.agenda = new Agenda();
+    }
+
     public void dayTable(){
 
     }

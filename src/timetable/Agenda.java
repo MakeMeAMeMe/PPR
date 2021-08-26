@@ -7,7 +7,7 @@ public class Agenda {
     LocalDateTime start_clean_time;
     LocalDateTime end_clean_time;
 
-    public Duration cleanTime(){
+    public Duration cleanTime() {
         return Duration.between(start_clean_time, end_clean_time);
     }
 

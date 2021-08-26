@@ -4,6 +4,10 @@ public class Timetable {
     private int day_status;
     private Day day;
 
+    public Timetable(){
+        this.day = new Day();
+    }
+
     public int getDay_status() {
         return day_status;
     }
@@ -18,5 +22,10 @@ public class Timetable {
 
     public Day getDay() {
         return day;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("%s", this.day.getAgenda().start_clean_time.toString());
     }
 }

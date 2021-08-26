@@ -1,5 +1,7 @@
 package house;
 
+import dados.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,14 +11,24 @@ public class House {
     private int num_rooms;
     private int num_people;
     private List<Room> rooms; // ok
-    public House(){
+    private List<Person> people; // ok
+
+    public House() {
         this.rooms = new ArrayList<>();
+        this.people = new ArrayList<>();
     }
-    public void signUpNewHouse(Room room){
+
+    public void signUpNewHouse(Room room) {
         this.rooms.add(room);
     }
-    public void calculateTimeTable(){
 
+    public String calculateTimeTable() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Room room :
+                this.rooms) {
+            stringBuilder.append(String.format("Data início: %s, Área: %s\n", room.getTimetable(), room.getRoom_size()));
+        }
+        return stringBuilder.toString();
     }
 
     public String getHouse_name() {
@@ -53,5 +65,13 @@ public class House {
 
     public List<Room> getRooms() {
         return rooms;
+    }
+
+    public void addPerson(Person person) {
+        this.people.add(person);
+    }
+
+    public List<Person> getPeople() {
+        return people;
     }
 }

@@ -9,7 +9,7 @@ public class MyTimeTables {
 
     }
     public void getTimeTable(){
-        System.out.println(this.timetable.getDay().getAgenda().cleanTime()); // TODO
+        System.out.println(this.timetable.getDay().getAgenda().cleanTime());
     }
     public void deleteTimeTable(){
 
